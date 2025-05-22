@@ -27,31 +27,54 @@ const Header = () => {
               onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
-              Categories
+              <li> Categories <Link to={CUSTOM_ROUTES.CATEGORIES} ></Link></li>
+             
               {isDropdownOpen && (
-                <ul className={styles.dropdownMenu}>
-                  <li>
-                    <Link className={styles.navLink} to="/cpu">CPU</Link>
-                  </li>
-                  <li>
-                    <Link className={styles.navLink} to="/motherboards">Motherboards</Link>
-                  </li>
-                  <li>
-                    <Link className={styles.navLink} to="/storage">Storage</Link>
-                  </li>
-                  <li>
-                    <Link className={styles.navLink} to="/gpu">GPU</Link>
-                  </li>
-                  <li>
-                    <Link className={styles.navLink} to="/ram">RAM</Link>
-                  </li>
-                  <li>
-                    <Link className={styles.navLink} to="/coolers">Coolers</Link>
-                  </li>
-                  <li>
-                    <Link className={styles.navLink} to="/power-supplies">Power Supplies</Link>
-                  </li>
-                </ul>
+                <li
+  className={styles.dropdown}
+  onMouseEnter={() => setIsDropdownOpen(true)}
+  onMouseLeave={() => setIsDropdownOpen(false)}
+>
+ 
+
+  {isDropdownOpen && (
+    <ul className={styles.dropdownMenu}>
+    <li
+  className={styles.dropdown}
+  onMouseEnter={() => setIsDropdownOpen(true)}
+  onMouseLeave={() => setIsDropdownOpen(false)}
+>
+ 
+
+  {isDropdownOpen && (
+    <ul className={styles.dropdownMenu}>
+      <li>
+        <Link className={styles.navLink} to="/cpu">CPU</Link>
+      </li>
+      <li>
+        <Link className={styles.navLink} to="/motherboards">Motherboards</Link>
+      </li>
+      <li>
+        <Link className={styles.navLink} to="/storage">Storage</Link>
+      </li>
+      <li>
+        <Link className={styles.navLink} to="/gpu">GPU</Link>
+      </li>
+      <li>
+        <Link className={styles.navLink} to="/ram">RAM</Link>
+      </li>
+      <li>
+        <Link className={styles.navLink} to="/coolers">Coolers</Link>
+      </li>
+      <li>
+        <Link className={styles.navLink} to="/power-supplies">Power Supplies</Link>
+      </li>
+    </ul>
+  )}
+</li>
+    </ul>
+  )}
+</li>
               )}
             </li>
             <li>
@@ -61,7 +84,7 @@ const Header = () => {
               <Link to={CUSTOM_ROUTES.CONTACT} className={styles.navLink}>Contact</Link>
             </li>
             <li>
-              <Link to="/cart">
+              <Link to={CUSTOM_ROUTES.CART}>
                 <img src={cart} alt="cart" width={30} />
               </Link>
             </li>
