@@ -8,6 +8,17 @@ import { CUSTOM_ROUTES } from "../../constants/custom-routse";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  
+const Header = () => {
+  const navigate = useNavigate();
+
+  const handleCategoryChange = (e) => {
+    const selectedCategory = e.target.value;
+    if (selectedCategory) {
+      navigate(CUSTOM_ROUTES.CATEGORY_DETAIL(selectedCategory));
+    }
+  };
+}
 
   return (
     <div className={styles.container}>
@@ -48,25 +59,27 @@ const Header = () => {
 
   {isDropdownOpen && (
     <ul className={styles.dropdownMenu}>
-      <li>
+      <li  onClick={() => handleCategoryClick('cpu')} >
         <Link className={styles.navLink} to="/cpu">CPU</Link>
       </li>
-      <li>
+      <li onClick={() => handleCategoryClick('motherboard')}> 
         <Link className={styles.navLink} to="/motherboards">Motherboards</Link>
       </li>
-      <li>
+      <li onClick={() => handleCategoryClick('storage')} >
+        
         <Link className={styles.navLink} to="/storage">Storage</Link>
       </li>
-      <li>
+      <li onClick={() => handleCategoryClick('gpu')} >
+
         <Link className={styles.navLink} to="/gpu">GPU</Link>
       </li>
-      <li>
+      <li onClick={() => handleCategoryClick('ram')} >
         <Link className={styles.navLink} to="/ram">RAM</Link>
       </li>
-      <li>
+      <li onClick={() => handleCategoryClick('coolers')} >
         <Link className={styles.navLink} to="/coolers">Coolers</Link>
       </li>
-      <li>
+      <li onClick={() => handleCategoryClick('power-supplies')}  >
         <Link className={styles.navLink} to="/power-supplies">Power Supplies</Link>
       </li>
     </ul>

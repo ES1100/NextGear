@@ -8,7 +8,6 @@ import gpuImage from "../../assets/images/gpu-01.jpeg";
 import cpuImage from "../../assets/images/cpu-01.jpg";
 import pwuImage from "../../assets/images/pwu-01.avif";
 import coolerImage from "../../assets/images/cooler-01.jpg";
-import Footer from "../../components/Footer/Footer";
 
 const LandingPage = () => {
   useEffect(() => {
