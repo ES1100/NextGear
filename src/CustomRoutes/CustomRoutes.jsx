@@ -18,8 +18,7 @@ const CustomRoutes = () => {
           </Layout>
         }
       />
-   
-     
+
       <Route
         path={CUSTOM_ROUTES.CONTACT}
         element={

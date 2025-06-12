@@ -42,17 +42,9 @@ const Header = () => {
                   <li onClick={() => handleCategoryClick("motherboards")}>
                     Motherboards
                   </li>
-                  <li onClick={() => handleCategoryClick("storage")}>
-                    Storage
-                  </li>
+
                   <li onClick={() => handleCategoryClick("gpu")}>GPU</li>
                   <li onClick={() => handleCategoryClick("ram")}>RAM</li>
-                  <li onClick={() => handleCategoryClick("coolers")}>
-                    Coolers
-                  </li>
-                  <li onClick={() => handleCategoryClick("power-supplies")}>
-                    Power Supplies
-                  </li>
                 </ul>
               )}
             </li>

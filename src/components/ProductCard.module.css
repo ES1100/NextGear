@@ -1,0 +1,90 @@
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.productCard {
+  width: 400px;
+  height: 650px;
+  border-radius: 35px;
+  background-color: #0d1321;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 13px 30px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 13px 30px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 13px 30px 10px rgba(0, 0, 0, 0.75);
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-10px);
+}
+
+.productImage {
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productName {
+  font-size: 28px;
+}
+
+.productDesc {
+  font-size: 15px;
+  color: gray;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 90%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.productSpecs {
+  font-size: 30px;
+  color: #748cab;
+  font-weight: 900;
+  width: 90%;
+  text-align: center;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  margin: 10px 0;
+}
+
+.productPrice {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  color: #748cab;
+  margin: 25px 0;
+}
+
+.addToCartBtn {
+  background-color: #0d1321;
+  color: #748cab;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #748cab;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.addToCartBtn:hover {
+  background-color: #0056b3;
+}

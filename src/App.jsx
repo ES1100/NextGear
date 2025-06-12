@@ -21,6 +21,7 @@ function App() {
             path={CUSTOM_ROUTES.CATEGORY(":categoryName")}
             element={<CategoryPage />}
           />
+
         </Route>
       </Routes>
     </Router>

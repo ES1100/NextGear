@@ -1,0 +1,80 @@
+.categoryWrapper {
+  padding: 2rem;
+}
+
+.cardGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.brandFilter {
+  display: flex;
+  justify-content: center;
+}
+
+.brandFilter button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #0d1321;
+  color: #748cab;
+  border: 1px solid #748cab;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.brandFilter button:hover {
+  background-color: #374b6d;
+}
+
+.activeFilter {
+  background-color: #748cab;
+  color: #0d1321;
+  font-weight: bold;
+}
+
+.filterWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #748cab;
+}
+
+.filterWrapper select {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid #748cab;
+  background-color: #0d1321;
+  color: #748cab;
+  cursor: pointer;
+}
+
+.filterWrapper label {
+  font-size: 22px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.categoryBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.categoryBanner p {
+  font-size: 25px;
+  color: #748cab;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 60%;
+}
