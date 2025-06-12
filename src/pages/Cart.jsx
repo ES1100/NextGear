@@ -1,14 +1,27 @@
 import React from "react";
+import { useCart } from "../data/CartContext";
 import styles from "./Cart.module.css";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
 
-const Cart = () => {
+export default function Cart() {
+  const { cartItems, removeFromCart } = useCart();
+
+  if (cartItems.length === 0) {
+    return <p>Your cart is empty.</p>;
+  }
+
   return (
-    <div>
-      <h1>Cart Page</h1>
+    <div className={styles.cartWrapper}>
+      <h1>Your Cart</h1>
+      <ul className={styles.cartList}>
+        {cartItems.map(({ id, name, price, quantity }) => (
+          <li key={id} className={styles.cartItem}>
+            <span>{name}</span>
+            <span>Quantity: {quantity}</span>
+            <span>${(price * quantity).toFixed(2)}</span>
+            <button onClick={() => removeFromCart(id)}>Remove</button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
-};
-
-export default Cart;
+}

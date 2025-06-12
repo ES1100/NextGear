@@ -3,7 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./ProductCard.module.css";
 
-export default function ProductCard({ name, price, image, desc, specs, aosDelay }) {
+export default function ProductCard({ product, addToCart, aosDelay }) {
+  const { name, price, image, desc, specs } = product;
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -19,7 +21,12 @@ export default function ProductCard({ name, price, image, desc, specs, aosDelay 
       <p className={styles.productDesc}>{desc}</p>
       <p className={styles.productSpecs}>{specs}</p>
       <p className={styles.productPrice}>${price}</p>
-      <button className={styles.addToCartBtn}>Add to Cart</button>
+      <button
+        className={styles.addToCartBtn}
+        onClick={() => addToCart(product)}  
+      >
+        Add to Cart
+      </button>
     </div>
   );
 }
