@@ -3,4 +3,5 @@ export const CUSTOM_ROUTES = {
   ABOUT_US: "/aboutus",
   CONTACT: "/contact",
   CART: "/cart",
+  CATEGORY: (categoryName) => `/categories/${categoryName}`,
 };

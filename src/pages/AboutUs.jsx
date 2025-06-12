@@ -12,13 +12,12 @@ import customer from "../assets/images/customer.jpg";
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true, 
+      duration: 1000,
+      once: true,
     });
   }, []);
   return (
     <>
-      <Header />
       <div className={styles.container}>
         <div className={styles.title}>
           <h1>NextGear</h1>
@@ -97,8 +96,6 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-
-        <Footer />
       </div>
     </>
   );
