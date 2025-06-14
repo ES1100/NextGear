@@ -1,5 +1,9 @@
 .categoryWrapper {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardGrid {
@@ -13,6 +17,16 @@
 .brandFilter {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 80px;
+}
+
+.brandFilter label {
+  font-size: 22px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #748cab;
+  margin-right: 1rem;
 }
 
 .brandFilter button {
