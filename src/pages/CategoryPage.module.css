@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 200px;
 }
 
 .cardGrid {
@@ -20,6 +21,12 @@
   align-items: center;
   width: 60%;
   margin: 80px;
+}
+
+.brandFilter select {
+  height: 70px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .brandFilter label {
@@ -76,20 +83,26 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.categoryBanner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
-
-.categoryBanner p {
-  font-size: 25px;
-  color: #748cab;
-  text-align: center;
-  margin-top: 1rem;
-  font-family: "Roboto Condensed", sans-serif;
+p {
   width: 60%;
 }
 
+.tips {
+  color: lightgray;
+  font-size: 30px;
+  width: 40%;
+  background-color: #0d1321;
+  padding: 30px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.productCount {
+  color: lightgray;
+  font-size: 20px;
+}
+
+.productCount {
+  margin-bottom: 100px;
+  font-size: 40px;
+}

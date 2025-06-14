@@ -2,7 +2,7 @@
   background-color: #0d1321;
   color: #748cab;
   padding: 20px 10px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif; /* base font for entire footer */
 }
 
 .columns {
@@ -10,6 +10,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  font-family: "Alumni Sans Pinstripe", sans-serif; /* font for columns and children */
 }
 
 .footerLogo {
@@ -22,7 +23,6 @@
 .footerLogo p {
   font-size: 35px;
   text-align: center;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
   font-weight: 900;
   color: #748cab;
 }
@@ -37,7 +37,6 @@
   color: lightgray;
   margin-bottom: 10px;
   font-size: 35px;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
 }
 
 .column ul {
@@ -45,6 +44,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+  font-weight: 900;
 }
 
 .column ul li {
@@ -85,21 +85,21 @@
 
 .newsletter {
   font-size: 18px;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
   font-weight: 900;
   color: lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Alumni Sans Pinstripe", sans-serif; /* added font-family here */
 }
 
 .newsletter label {
   margin-bottom: 15px;
   font-size: 35px;
-  font-family: "Alumni Sans Pinstripe", sans-serif;
   color: #748cab;
   text-align: center;
+  /* removed font-family, inherited from .newsletter */
 }
 
 .newsletter input {
@@ -110,11 +110,12 @@
   border-top-right-radius: 5px;
   background-color: #748cab;
   border: none;
+  font-family: "Roboto Condensed", sans-serif; /* inputs use base Roboto Condensed */
 }
 
 .newsletter input::placeholder {
   color: #0d1321;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: inherit; /* inherit from input */
   font-size: 14px;
 }
 
@@ -144,6 +145,7 @@
   text-align: center;
   color: #5f6f89;
   border-top: 1px solid #1b263b;
+  font-family: "Roboto Condensed", sans-serif; 
 }
 
 .footerBottom p {

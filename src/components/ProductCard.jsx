@@ -11,6 +11,7 @@ export default function ProductCard({ product, addToCart, aosDelay }) {
   }, []);
 
   return (
+
     <div
       className={styles.productCard}
       data-aos="fade-up"
@@ -23,7 +24,7 @@ export default function ProductCard({ product, addToCart, aosDelay }) {
       <p className={styles.productPrice}>${price}</p>
       <button
         className={styles.addToCartBtn}
-        onClick={() => addToCart(product)}  
+        onClick={() => addToCart(product)}
       >
         Add to Cart
       </button>

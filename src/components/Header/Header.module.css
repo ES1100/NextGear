@@ -12,13 +12,14 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   padding: 0 30px;
   background-color: #0d1321;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navBarLeft {
   margin-left: 50px;
 }
-
-
 
 .navBarRight ul {
   list-style: none;
@@ -139,3 +140,26 @@ body {
   text-decoration: none;
   color: lightgray;
 }
+
+
+.cartIconWrapper {
+  position: relative;
+}
+
+.cartCounter {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color:  #748cab;
+  color:  #0d1321;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

@@ -10,7 +10,7 @@ import workHours from "../assets/images/time-management.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { db } from "../Firebase/firebase";  // import only db from your firebase config file
+import { db } from "../Firebase/firebase";  
 import { collection, addDoc } from "firebase/firestore";
 
 const Contact = () => {

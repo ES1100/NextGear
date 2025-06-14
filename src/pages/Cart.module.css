@@ -44,3 +44,30 @@ span {
   font-family: "Alumni Sans Pinstripe", sans-serif;
 font-weight: 900;
 }
+
+.totalSection {
+  background-color: #0d1321;
+    border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 1px solid #748cab;
+  box-shadow: 3px 13px 30px 10px rgba(0, 0, 0, 0.75);
+  margin-top: 50px;
+  padding: 50px;
+  width: 60%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkoutButton {
+  background-color: #748cab;
+  color: #0d1321;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 30px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+}

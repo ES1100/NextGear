@@ -45,7 +45,6 @@ const Footer = () => {
             <h5>Quick Links</h5>
             <ul>
               <li>
-                {" "}
                 <Link
                   to={CUSTOM_ROUTES.HOME}
                   className={styles.navLink}
@@ -56,7 +55,6 @@ const Footer = () => {
               </li>
 
               <li>
-                {" "}
                 <Link
                   to={CUSTOM_ROUTES.CATEGORIES}
                   className={styles.navLink}
@@ -66,7 +64,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link
                   to={CUSTOM_ROUTES.ABOUT_US}
                   className={styles.navLink}
@@ -76,7 +73,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                {" "}
                 <Link
                   to={CUSTOM_ROUTES.CONTACT}
                   className={styles.navLink}

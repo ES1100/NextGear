@@ -7,10 +7,12 @@ import { CUSTOM_ROUTES } from "./constants/custom-routse";
 import Cart from "./pages/Cart";
 import CategoryPage from "./pages/CategoryPage";
 import Layout from "./Layout/Layout";
+import ScrollToTop from "./constants/ScrolltoTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path={CUSTOM_ROUTES.HOME} element={<Home />} />

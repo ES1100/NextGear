@@ -27,12 +27,22 @@ export default function CategoryPage() {
 
   return (
     <div className={styles.categoryWrapper}>
-      <h1 data-aos="fade-down" >
+      <h1 data-aos="zoom-in">
         Our Top {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}{" "}
         Products
       </h1>
+      <p className={styles.categoryDescription} data-aos="zoom-out">
+        Discover premium-quality {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)} products tailored to your needs. Whether you're looking for durability, style, or performance – we've got you covered.
+      </p>
+      <p className={styles.tips} data-aos="zoom-in">
+        Not sure which {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)} product to choose? Filter by brand or scroll through our top picks.
+      </p>
+      <p className={styles.limitedOffer} data-aos="fade-up">
+        Limited time offer: Free shipping on all {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)} orders above $50!
+      </p>
 
-      <div className={styles.brandFilter} data-aos="fade-up">
+
+      <div className={styles.brandFilter} data-aos="fade-right">
         <label htmlFor="brand-select">Filter by Brand:</label>
         <select
           id="brand-select"
@@ -45,8 +55,12 @@ export default function CategoryPage() {
               {brand}
             </option>
           ))}
+
         </select>
       </div>
+      <p className={styles.productCount}>
+        Showing {filteredProducts.length} product(s)
+      </p>
 
       <div className={styles.cardGrid}>
         {filteredProducts.length === 0 ? (
@@ -66,4 +80,4 @@ export default function CategoryPage() {
       </div>
     </div>
   );
-}
+}  
